@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Outfit', sans-serif;
+  font-size: 17px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: hsl(217, 54%, 11%);
+}
+img {
+  width: 100%;
+}
+
+.card {
+  width: 350px;
+  padding: 1.5rem;
+  border-radius: 15px;
+  background-color: hsl(216, 50%, 16%);
+}
+.card__header {
+  overflow: hidden;
+}
+.card__img-header {
+  border-radius: 10px;
+}
+.card__title {
+  color: hsl(0, 0%, 100%);
+  margin-top: 20px;
+  margin-bottom: 15px;
+  font-weight: 400;
+}
+.card__paragraph {
+  color: hsl(215, 51%, 70%);
+  font-weight: 300;
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+.card__divisor {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 18px;
+}
+.card__ethereum {
+  color: hsl(178, 100%, 50%);
+}
+.card__ethereum::before {
+  content: url(images/icon-ethereum.svg);
+  position: relative;
+  top: 3px;
+  padding-right: 8px;
+}
+.card__days {
+  color: hsl(215, 51%, 70%);
+}
+.card__days::before {
+  content: url(images/icon-clock.svg);
+  padding-right: 8px;
+  position: relative;
+  top: 2px;
+}
+.card__separator {
+  border-color: hsl(215, 28%, 41%);
+  margin-bottom: 20px;
+}
+.card__footer {
+  display: flex;
+  align-items: center;
+}
+.card__avatar {
+  width: 40px;
+  border: 1px solid hsl(0, 0%, 100%);
+  border-radius: 50%;
+  margin-right: 20px;
+}
+.card__creator {
+  color: hsl(215, 51%, 70%);
+}
+.card__creator-name {
+  color: hsl(0, 0%, 100%);
+}
